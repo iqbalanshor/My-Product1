@@ -45,7 +45,7 @@
 ---
 
 # Desain UI
-![image](https://github.com/user-attachments/assets/6ab1b094-d3aa-4ba4-be3d-dc43ccb47f61)
+![Screenshot 2025-04-29 232712](https://github.com/user-attachments/assets/3a702ac0-dbe5-443e-8121-58f977453313)
 
 # Trello
 https://trello.com/invite/b/67d90fd3512bfd8fe3b05ce1/ATTI5cc3335d2d7a02ea91858cebc29aef2bD18DA7C7/my-product
