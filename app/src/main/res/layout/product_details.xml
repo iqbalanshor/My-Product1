@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductDetailsActivity">
+
+    <!-- Top Bar with Back Button -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/img_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Divider line below top bar -->
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+    <!-- Product Image -->
+
+    <!-- Product Title -->
+
+    <!-- Details Label -->
+
+    <!-- Divider below Details label -->
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="236dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Product Image"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_20"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerTop" />
+
+    <TextView
+        android:id="@+id/txtProductTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="Women's Air Jordan 1 Mid 'PATENT VALENTINE'S DAY'"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct" />
+
+    <TextView
+        android:id="@+id/txtDetailsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="420dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/dividerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray_light"
+        app:layout_constraintTop_toBottomOf="@id/txtDetailsLabel" />
+
+    <!-- Details Table -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/dividerDetails">
+
+        <!-- Brand Row -->
+        <TextView
+            android:id="@+id/txtBrandLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Brand"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/txtReleaseDateLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBrandValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Air Jordan 1"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtBrandLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtBrandLabel" />
+
+        <!-- Release Date Row -->
+        <TextView
+            android:id="@+id/txtReleaseDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Release Date"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/txtColorLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtBrandLabel" />
+
+        <TextView
+            android:id="@+id/txtReleaseDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="1 January 2025"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtReleaseDateLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtReleaseDateLabel" />
+
+        <!-- Color Row -->
+        <TextView
+            android:id="@+id/txtColorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Color"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/txtGenderLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtReleaseDateLabel" />
+
+        <TextView
+            android:id="@+id/txtColorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Pink"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtColorLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtColorLabel" />
+
+        <!-- Gender Row -->
+        <TextView
+            android:id="@+id/txtGenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Gender"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtColorLabel" />
+
+        <TextView
+            android:id="@+id/txtGenderValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Women"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/txtGenderLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtGenderLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

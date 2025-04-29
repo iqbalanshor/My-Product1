@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyProduct</string>
+    <string name="logo_mp">logo_mp</string>
+    <string name="todo">TODO</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="log_in">Log In</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="welcome_to_my_product">welcome to my product</string>
+    <string name="product_image">Product Image</string>
+    <string name="brand">Brand</string>
+    <string name="product_name">Product Name</string>
+</resources>
